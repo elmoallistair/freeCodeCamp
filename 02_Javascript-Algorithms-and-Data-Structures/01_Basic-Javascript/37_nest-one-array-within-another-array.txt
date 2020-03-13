@@ -1,5 +1,0 @@
-// Example
-var ourArray = [["the universe", 42], ["everything", 101010]];
-
-// Only change code below this line
-var myArray = [[["One", 1], ["Two", 2]], ["Three", 3]];
