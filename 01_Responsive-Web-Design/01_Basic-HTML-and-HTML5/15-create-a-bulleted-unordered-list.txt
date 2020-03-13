@@ -1,0 +1,13 @@
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things that cat love:
+  <ul>
+    <li>Milk</li>
+    <li>Cheese</li>
+    <li>Meat</li>
+  </ul>
+</main>
