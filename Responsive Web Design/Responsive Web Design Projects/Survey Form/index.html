@@ -1,0 +1,86 @@
+<!-- Written: 19-Dec-2019 | Update: 09-Feb-2020 -->
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title> freeCodeCamp Project - Survey Form </title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        </head>
+        <body>
+            <main>
+                <form id="survey-form">
+                    <div class="head">
+                        <h1 id="title">Customer Survey Form</h1>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, magnam!</p>
+                        <hr id="line">
+                    </div>
+
+                    <div class="name">
+                        <label for="name" id="name-label">Name</label>
+                        <input id="name" class="highlight" type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="email">
+                        <label for="email" id="email-label">E-mail</label>
+                        <input id="email" class="highlight" type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="age">
+                        <label for="age" id="number-label">Age</label>
+                        <input id="number" class="highlight" type="number" placeholder="Age" min="17" max="100">
+                    </div>
+
+                    <div class="gender">
+                        <p>Gender</p>
+                        <label><input type="radio" name="gender" value="man">Man</label>
+                        <label><input type="radio" name="gender" value="woman">Woman</label>
+                    </div>
+
+                    <div class="job">
+                        <label for="job">Your are</label>
+                        <select id="dropdown" required>
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="1">Consumer</option>
+                            <option value="2">Dropshipper</option>
+                            <option value="3">Distributor</option>
+                            <option value="4">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="rate">
+                        <label for="satisfaction-rate">How satisfied you are with our services?</label>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1" value="1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star2" value="2"><label for="star2"></label>
+                            <input type="radio" name="star" id="star3" value="3"><label for="star3"></label>
+                            <input type="radio" name="star" id="star4" value="4"><label for="star4"></label>
+                            <input type="radio" name="star" id="star5" value="5"><label for="star5"></label>
+                        </div>
+                    </div>
+
+                    <div class="fav-product">
+                        <p>What products category you like the most?</p>
+                            <label><input type="checkbox" value="electronics">Electronics</label>
+                            <label><input type="checkbox" value="food">Food</label>
+                            <label><input type="checkbox" value="fashion">Fashion</label>
+                            <label><input type="checkbox" value="homestuff">Home Stuff</label>
+                            <label><input type="checkbox" value="other">Other</label>
+                    </div>
+
+                    <div class="comment">
+                        <p>What things that you want to say to improve our product?</p>
+                        <textarea name="comments" cols="30" rows="10" placeholder="Leave your comments"></textarea>
+                        <button id="submit">Submit</button>
+                    </div>
+
+                    <div class="project">
+                        <p>Responsive Web Design Project #2 - Survey Form</p>
+                    </div>
+                </form>
+            </main>
+        </body>
+    </html>

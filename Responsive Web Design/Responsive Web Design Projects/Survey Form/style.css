@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ======================================== */
+
+#survey-form {
+    margin: auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 5px 5px 5px #888;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 24px;
+    line-height: 1.6;
+    background-image: url(src/what-the-hex.png);
+}
+
+main {
+    margin: 10px;
+}
+
+div {
+    margin: 25px 0;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+input, textarea, .job #dropdown {
+    margin: 10px 0;
+    font-size: 0.75em;
+}
+
+input[type="text"],[type="email"], [type="number"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="radio"], [type="checkbox"] {
+    margin: -3px 5px 0 5px;
+    vertical-align: middle;
+}
+
+input:focus {
+    border: 2px solid green;
+    box-shadow: none;
+}
+
+select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    color: inherit;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 0.65em;
+    padding: 10px;
+    resize: none;
+}
+
+.head {
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 15px 0;
+}
+
+.head #title{
+    font-weight: bold;
+}
+
+.head #description {
+    font-size: 0.4em;
+}
+
+.head #line {
+    width: 700px;
+    height: 2px;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+}
+
+.gender label, .fav-product label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.75em;
+}
+
+.rating {
+    display: flex;
+    transform: translate(0,0) rotateY(180deg);
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: gold;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.rating input:checked ~ label:after {
+    opacity: 1;
+}
+
+.comment button {
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 2px solid none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+    background-color: #fff;
+    position: relative;
+}
+
+.comment button:hover {
+    transform: scale(1.05);
+}
+
+.project {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    background-color: #222;
+}
+
+.project p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+@media(min-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
